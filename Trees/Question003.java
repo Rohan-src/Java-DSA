@@ -6,7 +6,7 @@ public class Question003 {
     public static class Node{
         int data;
         Node left;
-        Node right;
+        Node right ;
         Node(int data){
             this.data=data;
             this.left=null;
