@@ -29,7 +29,7 @@ public class BT {
         System.out.println("Do you want to enter to left of " + n.val);
         Boolean lbool = sc.nextBoolean();
         if (lbool == true) {
-            System.out.println("Enter the value for the left of" + n.val + ":");
+            System.out.println("Enter the value for the left of " + n.val + ":");
             int val = sc.nextInt();
             n.left = new Node(val);
             Mpop(sc, n.left);
@@ -37,7 +37,7 @@ public class BT {
         System.out.println("Do you want to enter to right of " + n.val);
         Boolean rbool = sc.nextBoolean();
         if(rbool == true){
-            System.out.println("Enter the value for the right of" + n.val + ":");
+            System.out.println("Enter the value for the right of " + n.val + ":");
             int val = sc.nextInt();
             n.right = new Node(val);
             Mpop(sc, n.right);
