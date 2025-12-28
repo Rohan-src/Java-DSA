@@ -3,8 +3,7 @@ package Trees;
 import java.util.*;
 //Inorder traversal: Used to retrieve elements of a binary search tree in sorted order.
 //Left → Root → Right
-public class Question00
-2 {
+public class Question002 {
     public static class Node{
         int data;
         Node left;
