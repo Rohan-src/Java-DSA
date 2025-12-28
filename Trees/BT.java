@@ -1,6 +1,6 @@
 package Trees;
 import java.util.Scanner;
-public class Binary_Tree_creation {
+public class BT {
     private class Node{
         private int val;
         private Node left;
@@ -19,21 +19,24 @@ public class Binary_Tree_creation {
     private Node Root;
 
     public void pop(Scanner sc){
-        System.out.println("Enter value for root:");
+        System.out.print("Enter value for root:");
         int val=sc.nextInt();
         Root=new Node(val);
         Mpop(sc,Root);
     }
 
     public void Mpop(Scanner sc,Node n) {
-        System.out.println("Do you want to enter to left of" + n.val);
-        Boolean bool = sc.nextBoolean();
-        if (bool == true) {
+        System.out.println("Do you want to enter to left of " + n.val);
+        Boolean lbool = sc.nextBoolean();
+        if (lbool == true) {
             System.out.println("Enter the value for the left of" + n.val + ":");
             int val = sc.nextInt();
             n.left = new Node(val);
             Mpop(sc, n.left);
-        } else {
+        }
+        System.out.println("Do you want to enter to right of " + n.val);
+        Boolean rbool = sc.nextBoolean();
+        if(rbool == true){
             System.out.println("Enter the value for the right of" + n.val + ":");
             int val = sc.nextInt();
             n.right = new Node(val);
@@ -48,5 +51,12 @@ public class Binary_Tree_creation {
         System.out.println(indent+n.val);
         display(n.left,indent+"\t");
         display(n.right,indent+"\t");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BT tree=new BT();
+        tree.pop(sc);
+        tree.display();
     }
 }
