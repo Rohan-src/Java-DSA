@@ -34,7 +34,7 @@ public class BT {
             n.left = new Node(val);
             Mpop(sc, n.left);
         }
-        System.out.println("Do you want to enter to right of " + n.val);
+        System.out.println("Do you want to enter to right of:" + n.val);
         Boolean rbool = sc.nextBoolean();
         if(rbool == true){
             System.out.println("Enter the value for the right of " + n.val + ":");
