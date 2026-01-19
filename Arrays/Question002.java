@@ -1,9 +1,9 @@
 
-package array;
+package Arrays;
 
 import java.util.*;
 
-public class Array3{
+public class Question002{
     public static void main(String[] args){
 
         System.out.print("Enter size:- ");
